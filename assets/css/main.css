@@ -189,6 +189,40 @@ figcaption,
   content: "#";
 }
 
+.post-agenda {
+  margin: 0 0 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.agenda-label {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.post-agenda ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.post-agenda li {
+  margin-bottom: 0.25rem;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+}
+
+.post-agenda a {
+  text-decoration: none;
+}
+
+.post-agenda a:hover {
+  text-decoration: underline;
+}
+
 .post-body {
   /* KaTeX display math breathing room */
 }

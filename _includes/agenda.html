@@ -1,0 +1,15 @@
+{% assign h2_parts = content | split: '<h2 id="' %}
+{% assign h2_count = h2_parts.size | minus: 1 %}
+{% if h2_count >= 2 %}
+<nav class="post-agenda" aria-label="Agenda">
+  <p class="agenda-label">Agenda</p>
+  <ol>
+    {% for part in h2_parts offset: 1 %}
+      {% assign id = part | split: '"' | first %}
+      {% assign remainder = part | remove_first: id %}
+      {% assign title = remainder | remove_first: '">' | split: '</h2>' | first | strip_html | strip %}
+      <li><a href="#{{ id }}">{{ title }}</a></li>
+    {% endfor %}
+  </ol>
+</nav>
+{% endif %}

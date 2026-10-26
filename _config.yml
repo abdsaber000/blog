@@ -9,6 +9,7 @@ baseurl: "/blog"
 markdown: kramdown
 kramdown:
   input: GFM
+  auto_ids: true
   math_engine: null
   syntax_highlighter: rouge
 
