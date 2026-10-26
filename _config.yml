@@ -3,9 +3,8 @@ description: Mathematics notes, programming, handouts, and videos.
 author: Your Name
 email: ""
 
-# Replace YOUR_USERNAME with your GitHub username (repo must be YOUR_USERNAME.github.io)
-url: "https://YOUR_USERNAME.github.io"
-baseurl: ""
+url: "https://abdsaber000.github.io"
+baseurl: "/blog"
 
 markdown: kramdown
 kramdown:
