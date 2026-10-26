@@ -190,9 +190,12 @@ figcaption,
 }
 
 .post-agenda {
-  margin: 0 0 1.75rem;
-  padding-bottom: 1.25rem;
-  border-bottom: 1px solid var(--border);
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 0 1.75rem auto;
+  padding: 0.85rem 1.1rem;
+  background: #e8f0f7;
+  border-radius: 4px;
 }
 
 .agenda-label {
