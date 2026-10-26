@@ -4,9 +4,9 @@
 #   date: 2026-03-15
 #   description: Worked solutions for the practice midterm.
 
-- title: Sample handout
+- title: Fast Fourier Transform (FFT)
   file: /assets/handouts/FFT.pdf
-  date: 2026-10-26
+  date: 2024-02-06
   description: A brief introduction to the Fast Fourier Transform.
 
 - title: Sample handout
