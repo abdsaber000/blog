@@ -4,8 +4,6 @@ title: Videos
 permalink: /videos/
 ---
 
-YouTube videos. Add an entry in `_data/videos.yml` with the video id from the URL (`youtube.com/watch?v=VIDEO_ID`).
-
 {% if site.data.videos and site.data.videos.size > 0 %}
 <ul class="item-list">
   {% assign items = site.data.videos | sort: "date" | reverse %}

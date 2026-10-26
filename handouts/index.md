@@ -4,8 +4,6 @@ title: Handouts
 permalink: /handouts/
 ---
 
-PDF notes, solutions, and other handouts. Drop a file in `assets/handouts/` and add an entry in `_data/handouts.yml`.
-
 {% if site.data.handouts and site.data.handouts.size > 0 %}
 <ul class="item-list">
   {% assign items = site.data.handouts | sort: "date" | reverse %}
