@@ -1,0 +1,40 @@
+title: Notes
+description: Mathematics notes, programming, handouts, and videos.
+author: Your Name
+email: ""
+
+# Replace YOUR_USERNAME with your GitHub username (repo must be YOUR_USERNAME.github.io)
+url: "https://YOUR_USERNAME.github.io"
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: null
+  syntax_highlighter: rouge
+
+permalink: /notes/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .gitignore
+  - .ruby-version
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page

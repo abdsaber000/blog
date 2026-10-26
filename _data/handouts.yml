@@ -1,0 +1,10 @@
+# Add a handout: put the PDF in assets/handouts/, then add an entry below.
+# - title: Midterm solutions
+#   file: /assets/handouts/midterm-solutions.pdf
+#   date: 2026-03-15
+#   description: Worked solutions for the practice midterm.
+
+- title: Sample handout
+  file: /assets/handouts/sample-handout.pdf
+  date: 2026-10-26
+  description: Placeholder PDF — replace with your own handouts.

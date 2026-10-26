@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  <div class="wrap">
+    {% include nav.html %}
+    <main class="content">
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      <p>{{ site.title }}{% if site.author %} · {{ site.author }}{% endif %}</p>
+    </footer>
+  </div>
+</body>
+</html>
