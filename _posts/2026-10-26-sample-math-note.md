@@ -1,9 +1,9 @@
----
+<!-- ---
 title: "Sample math note"
 date: 2026-10-26
 tags: [math]
 excerpt: "A short note showing KaTeX equations and a figure — the pattern for new posts."
----
+--- -->
 
 This post shows how math notes look on the site. Write Markdown; put LaTeX math in `$...$` or `$$...$$`.
 
