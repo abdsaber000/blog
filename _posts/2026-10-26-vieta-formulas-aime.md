@@ -1,9 +1,10 @@
-<!-- ---
+---
 title: "Vieta's formulas, with AIME examples"
 date: 2026-10-26
 tags: [math]
 excerpt: "How the coefficients of a polynomial encode symmetric sums of its roots — and three AIME problems that use this."
---- -->
+published: false
+---
 
 Vieta's formulas turn a polynomial's coefficients into statements about its roots. On contests like the AIME, they often replace messy root-finding with a few symmetric-sum identities.
 

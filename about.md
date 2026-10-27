@@ -4,11 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Hi — I'm **Abdulrahman Saber**. I'm interested in mathematics and programming. I this blog, I share cool stuff that I learn.
+Hi — I'm **Abdulrahman Saber**. I'm interested in mathematics and programming. In this blog, I share cool stuff that I learn.
 
 
 <p class="resume-link">
   <a href="{{ '/assets/resume.pdf' | relative_url }}">Download resume (PDF)</a>
 </p>
 
-Replace `assets/resume.pdf` with your own file when ready.
