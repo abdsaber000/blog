@@ -1,10 +1,8 @@
 ---
 layout: default
-title: Notes
+title: Blog
 permalink: /
 ---
-
-<p class="lead">Mathematics notes and programming posts. Write in Markdown with LaTeX math; complex documents can live as PDFs under Handouts.</p>
 
 {% if site.posts.size == 0 %}
 <p class="empty-state">No notes yet. Add a file under <code>_posts/</code>.</p>
