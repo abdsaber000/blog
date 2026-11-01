@@ -188,7 +188,7 @@ It remains to compute $d_0, d_1, \ldots, d_n$ (the number of partitions of each 
 Note that a partition into distinct positive parts cannot be too long. The shortest $k$ distinct positives are $1,2,\ldots,k$, and their sum is the triangular number
 
 $$
-1 + 2 + \cdots + k = \frac{k(k+1)}{2}.
+1 + 2 + \cdots + k = \frac{k(k+1)}{2}
 $$
 
 Since this summation cannot exceed $n$, solving $\frac{k(k+1)}{2} \le n$ gives the quadratic
