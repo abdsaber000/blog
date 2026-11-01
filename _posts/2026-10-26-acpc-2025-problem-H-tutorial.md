@@ -26,7 +26,7 @@ and every even value appears at most once in the sequence. (Odd values may repea
 For $n = 4$, the valid sequences are
 
 $$
-[1,1,1,1] \quad [1,1,2] \quad [1,3] \quad [4].
+[1,1,1,1] \quad [1,1,2] \quad [1,3] \quad [4]
 $$
 
 The sequence $[2,2]$ is invalid: $2$ is even and appears twice.
@@ -49,7 +49,7 @@ If the odd parts sum to $k$ and the even parts sum to $n-k$, we can count those 
 The answer for $n$ is then the convolution
 
 $$
-\sum_{k=0}^{n} o_k \, e_{n-k}.
+\sum_{k=0}^{n} o_k \, e_{n-k}
 $$
 
 The rest of the note shows that both $o$ and $e$ reduce to the single sequence $d$.
@@ -100,8 +100,8 @@ One clean proof uses generating functions. Let $f$ be the generating function fo
 
 $$
 \begin{aligned}
-f(x) &= (1+x)(1+x^2)(1+x^3)\cdots, \\
-g(x) &= (1+x+x^2+\cdots)(1+x^3+x^6+\cdots)(1+x^5+x^{10}+\cdots)\cdots.
+f(x) &= (1+x)(1+x^2)(1+x^3)\cdots \\
+g(x) &= (1+x+x^2+\cdots)(1+x^3+x^6+\cdots)(1+x^5+x^{10}+\cdots)\cdots
 \end{aligned}
 $$
 
@@ -139,7 +139,7 @@ $$
 For $f$, multiply and divide each factor by a conjugate. Using $1 - x^{2k} = (1 - x^k)(1 + x^k)$, we get
 
 $$
-1 + x^k = \frac{1 - x^{2k}}{1 - x^k},
+1 + x^k = \frac{1 - x^{2k}}{1 - x^k}
 $$
 
 and therefore
@@ -149,7 +149,7 @@ $$
 f(x)
 &= \prod_{k=1}^{\infty} (1 + x^k)
 = \prod_{k=1}^{\infty} \frac{1 - x^{2k}}{1 - x^k} \\
-&= \frac{1-x^2}{1-x} \cdot \frac{1-x^4}{1-x^2} \cdot \frac{1-x^6}{1-x^3} \cdot \frac{1-x^8}{1-x^4} \cdots.
+&= \frac{1-x^2}{1-x} \cdot \frac{1-x^4}{1-x^2} \cdot \frac{1-x^6}{1-x^3} \cdot \frac{1-x^8}{1-x^4} \cdots
 \end{aligned}
 $$
 
@@ -161,7 +161,7 @@ Look at the numerator and the denominator separately:
 Every term in the denominator with even exponent cancels the matching term in the numerator. What remains in the denominator are the terms with odd exponent only:
 
 $$
-f(x) = \frac{1}{1-x} \cdot \frac{1}{1-x^3} \cdot \frac{1}{1-x^5} \cdots = g(x).
+f(x) = \frac{1}{1-x} \cdot \frac{1}{1-x^3} \cdot \frac{1}{1-x^5} \cdots = g(x)
 $$
 
 Since the generating functions are equal, their coefficients are equal: $o_i = d_i$ for every $i$.
@@ -207,7 +207,7 @@ For large $n$, the max value of $k$  $\approx$ $\sqrt{2n}$, so the maximum numbe
 Let $\mathrm{dp}[k][s]$ be the number of sequences of $k$ distinct positive integers that sum to $s$. Then
 
 $$
-d_s = \sum_{k} \mathrm{dp}[k][s],
+d_s = \sum_{k} \mathrm{dp}[k][s]
 $$
 
 where the sum runs over all possible lengths $k$ (at most $O(\sqrt{s})$, by the bound above).
@@ -215,13 +215,13 @@ where the sum runs over all possible lengths $k$ (at most $O(\sqrt{s})$, by the 
 To get a recurrence, take such a sequence $a_1 < a_2 < \cdots < a_k$ with
 
 $$
-s = a_1 + a_2 + \cdots + a_k.
+s = a_1 + a_2 + \cdots + a_k
 $$
 
 Subtract $1$ from every term:
 
 $$
-s - k = (a_1 - 1) + (a_2 - 1) + \cdots + (a_k - 1).
+s - k = (a_1 - 1) + (a_2 - 1) + \cdots + (a_k - 1)
 $$
 
 The new terms are still strictly increasing, hence still distinct. What happens next depends on whether $a_1 = 1$:
@@ -232,7 +232,7 @@ The new terms are still strictly increasing, hence still distinct. What happens 
 Since there's no overlapping between the 2 cases, we can simply sum the results. Therefore
 
 $$
-\mathrm{dp}[k][s] = \mathrm{dp}[k][s - k] + \mathrm{dp}[k - 1][s - k].
+\mathrm{dp}[k][s] = \mathrm{dp}[k][s - k] + \mathrm{dp}[k - 1][s - k]
 $$
 
 The base case for this recurrence is $\mathrm{dp}[0][0] = 1$ since there's only $1$ way to build an empty sequence.
